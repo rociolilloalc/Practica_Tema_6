@@ -193,6 +193,11 @@ a:hover {
 a:active {
   color: #ff8c00;
 }
+/****otros****/
+.duda{
+  text-align: center;
+  margin-bottom: 10px;
+}
 /**** footer ****/
 footer{
     position: relative;
