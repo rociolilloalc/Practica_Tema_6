@@ -34,16 +34,16 @@
             <form>
                 <fieldset>
                     <legend>Datos Personales</legend>
-                        <label name="lab_nombre_y_apellidos">Nombre y Apellidos: </label>
-                        <input name="nombre" type="text"  autofocus="true" pattern="[a-zA-Z]{1,30}" required placeholder="Escriba aquí su nombre..." title="nombre-y-apellidos"><br>
-                        <label name="lab_email">Email: </label>
-                        <input name="email" type="email" required placeholder="Escriba aquí su email..." title="email"><br>
-                        <label name="lab_edad">Edad: </label>
-                        <input name="edad" type="text" min="18" max="99" pattern="[0-9]{2}" required placeholder="Ponga aqui su edad (+18)..." title="edad"><br>
-                        <label name="lab_telefono">Teléfono: </label>
-                        <input name="telefono" type="tel"  placeholder="Teléfono..." required title="telefono"><br>
-                        <label name="lab_consulta">Consulta: </label><br>
-                        <textarea name="consulta" rows="10" cols="50" placeholder="Escribe aquí su mensaje..." title="mensaje"></textarea><br>
+                        <label name="lab_nombre_y_apellidos" id="nombreApellido">Nombre y Apellidos: </label>
+                        <input name="nombre" type="text"  autofocus="true" pattern="[a-zA-Z]{1,30}" required placeholder="Escriba aquí su nombre..." title="nombre-y-apellidos" aria-labelledby="nombreApellido"><br>
+                        <label name="lab_email" id="email">Email: </label>
+                        <input name="email" type="email" required placeholder="Escriba aquí su email..." title="email" aria-labelledby="email"><br>
+                        <label name="lab_edad" id="edad">Edad: </label>
+                        <input name="edad" type="text" min="18" max="99" pattern="[0-9]{2}" required placeholder="Ponga aqui su edad (+18)..." title="edad" aria-labelledby="edad"><br>
+                        <label name="lab_telefono" id="telefono">Teléfono: </label>
+                        <input name="telefono" type="tel"  placeholder="Teléfono..." required title="telefono" aria-labelledby="telefono"><br>
+                        <label name="lab_consulta" id="consulta">Consulta: </label><br>
+                        <textarea name="consulta" rows="10" cols="50" placeholder="Escribe aquí su mensaje..." title="mensaje" aria-labelledby="consulta"></textarea><br>
                         <input type="checkbox" id="check" required  aria-labelledby="galletas">
                         <label id="galletas">Acepto la política de privacidad y cookies.</label><br>
                         <input type="button" value="Enviar" class="boton-form">
