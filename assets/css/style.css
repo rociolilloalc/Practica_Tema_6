@@ -1,0 +1,251 @@
+/****** generic classes*******/
+@font-face {
+  font-family: "Road Rage";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Road Rage"),
+    url(https://fonts.gstatic.com/s/architectsdaughter/v11/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2)
+      format("woff2");
+}
+* {
+  padding: 0px;
+}
+/****** header *******/
+header {
+  background-color: white;
+  margin-top: 61px;
+}
+h1,
+h2,
+h3 {
+  color: black;
+}
+header a,
+h1 {
+  float: left;
+  position: relative;
+}
+.logotipo {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.logotipo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+/****** nav menu *******/
+nav,
+footer {
+  background-color: #ffd700;
+  padding: 5px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  font-family: "Road Rage";
+  -webkit-transition: 1s linear;
+  transition: 0 0.5s linear;
+}
+nav:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px #000000;
+  box-shadow: 10px 10px 14px 2px #000000;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  vertical-align: top;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #ff8c00;
+  text-shadow: 3px 3px 2px #332f2c;
+  font-size: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav i {
+  padding-right: 4px;
+}
+/****** main content *******/
+body {
+  font-size: 1em;
+  font-family: Verdana;
+  margin: 0px;
+}
+a {
+  color: #ff8c00;
+}
+a[href$=".pdf"]:after {
+    content: url('../images/808584_document_512x512.png')
+}
+body img:not([alt]) {
+    border: 3px solid red; 
+}
+section {
+  clear: both;
+}
+section article {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 1%;
+}
+article h1 {
+  display: block;
+  float: none;
+}
+article img {
+  display: inline;
+  width: 15%;
+}
+article img::after {
+    content:''
+}
+article p {
+  display: inline-block;
+  width: 78%;
+  vertical-align: top;
+  margin-left: 2%;
+}
+aside,
+table {
+  background-color: #cccc;
+}
+aside {
+  padding: 10px;
+}
+aside h3 {
+  padding: 0;
+  margin: 0;
+}
+aside li {
+  list-style-type: square;
+  margin-left: 30px;
+}
+aside ul {
+  margin: 0px;
+}
+#whatsapp {
+  width: 48px;
+  height: 48px;
+  float: right;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+/**** table *****/
+table td {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+table caption {
+  caption-side: bottom;
+  text-align: center;
+}
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+table tr,
+td {
+  border: 1px solid black;
+}
+table th {
+  text-align: center;
+}
+table tr:first-child {
+  background-color: #999;
+}
+tr:nth-child(odd) {
+  background-color: #ff8c00;
+}
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+/**** form *****/
+fieldset {
+  background-color: #fffce1;
+  width: 500px;
+  padding-left: 15px;
+  margin: 10px auto;
+}
+fieldset input,
+fieldset textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+/**** a *****/
+a:link {
+  color: #bfe622;
+}
+a:visited {
+  color: #e60000;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: #ff8c00;
+}
+/**** footer ****/
+footer{
+    position: relative;
+}
+footer input {
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+footer input:hover {
+  background-color: darkorange;
+}
+.comparte{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+@media (max-width: 1024px) {
+  article img {
+    display: block;
+    width: 100%;
+  }
+  article p {
+    display: block;
+    width: 100%;
+    margin: 10px 0 30px 0;
+  }
+}
+@media (max-width: 480px) {
+  article img {
+    display: none;
+  }
+  article h1 {
+    margin-bottom: 0px;
+  }
+  fieldset {
+    margin: 0;
+    width: calc(99% - 20px) !important;
+    padding: 10px;
+  }
+  fieldset label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  fieldset input {
+      width: 350px;
+  }
+  .boton-form{
+      width: 100%;
+  }
+  iframe{
+      display: block;
+  }
+  .comparte{
+      position: initial;
+  }
+}
